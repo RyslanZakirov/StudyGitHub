@@ -20,4 +20,16 @@ const arr = [123, 12, 745, 234, 68];
 
 navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
   console.log(stream);
+
+  const mediaRecorder = new MediaRecorder(stream);
+
+  mediaRecorder.ondataavailable = (e) => {
+    console.log(e.data);
+  };
+
+  mediaRecorder.start();
+
+  setTimeout(() => {
+    mediaRecorder.stop();
+  }, 4000);
 });
