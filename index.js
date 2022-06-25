@@ -17,3 +17,7 @@ const some = () => {
 const sample = new Person();
 
 const arr = [123, 12, 745, 234, 68];
+
+navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
+  console.log(stream);
+});
