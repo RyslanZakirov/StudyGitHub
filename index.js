@@ -13,3 +13,5 @@ class Person {
 const some = () => {
   return Math.pow(23, 2);
 };
+
+const sample = new Person()
