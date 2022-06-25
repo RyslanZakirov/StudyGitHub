@@ -9,3 +9,7 @@ class Person {
     return "ertyhg";
   }
 }
+
+const some = () => {
+  return Math.pow(23, 2);
+};
