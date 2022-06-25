@@ -14,4 +14,6 @@ const some = () => {
   return Math.pow(23, 2);
 };
 
-const sample = new Person()
+const sample = new Person();
+
+const arr = [123, 12, 745, 234, 68];
